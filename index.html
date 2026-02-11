@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Robotics Engineering Club | Leaderboard</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="bg-blur"></div>
+
+  <header class="hero container">
+    <div class="brand">
+      <div class="brand-icon">
+        <i data-lucide="cpu"></i>
+      </div>
+      <div>
+        <div class="brand-en">Robotics Engineering Club</div>
+        <div class="brand-ar">نادي هندسة الروبوتات</div>
+      </div>
+    </div>
+
+    <h1>لوحة التقدم والتميز</h1>
+    <p class="subtitle">
+      عرض أسبوعي لمتوسط أداء اللجان، يعزز التنافس الإيجابي والتطور المستمر.
+    </p>
+
+    <div class="meta">
+      <span><i data-lucide="calendar"></i> تحديث: نهاية كل أسبوع</span>
+      <span><i data-lucide="bar-chart-3"></i> عرض: متوسط الساعات فقط</span>
+    </div>
+  </header>
+
+  <!-- Committees -->
+  <section class="section container">
+    <div class="section-head">
+      <h2><i data-lucide="trophy"></i> أداء اللجان</h2>
+      <span class="note">القيم الحالية افتراضية (XX) حتى اكتمال الرصد.</span>
+    </div>
+
+    <div class="cards">
+
+      <!-- Card -->
+      <div class="card">
+        <div class="card-top">
+          <h3>لجنة الإشراف والتطوير</h3>
+          <span class="badge"><i data-lucide="activity"></i> متابعة</span>
+        </div>
+        <div class="avg">Average: <strong>XX</strong> hrs</div>
+        <div class="progress"><div class="bar"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <h3>لجنة المحتوى</h3>
+          <span class="badge"><i data-lucide="activity"></i> متابعة</span>
+        </div>
+        <div class="avg">Average: <strong>XX</strong> hrs</div>
+        <div class="progress"><div class="bar"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <h3>لجنة التصميم</h3>
+          <span class="badge"><i data-lucide="activity"></i> متابعة</span>
+        </div>
+        <div class="avg">Average: <strong>XX</strong> hrs</div>
+        <div class="progress"><div class="bar"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <h3>لجنة إدارة الفعاليات والاستقطاب</h3>
+          <span class="badge"><i data-lucide="activity"></i> متابعة</span>
+        </div>
+        <div class="avg">Average: <strong>XX</strong> hrs</div>
+        <div class="progress"><div class="bar"></div></div>
+      </div>
+
+      <div class="card">
+        <div class="card-top">
+          <h3>لجنة التسويق وإدارة مواقع التواصل</h3>
+          <span class="badge"><i data-lucide="activity"></i> متابعة</span>
+        </div>
+        <div class="avg">Average: <strong>XX</strong> hrs</div>
+        <div class="progress"><div class="bar"></div></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Top 3 -->
+  <section class="section container">
+    <div class="section-head">
+      <h2><i data-lucide="medal"></i> أفضل 3 من كل لجنة</h2>
+    </div>
+
+    <div class="top3-grid">
+      <div class="member-card">
+        <i data-lucide="user"></i>
+        <div class="member-name">— — —</div>
+      </div>
+      <div class="member-card">
+        <i data-lucide="user"></i>
+        <div class="member-name">— — —</div>
+      </div>
+      <div class="member-card">
+        <i data-lucide="user"></i>
+        <div class="member-name">— — —</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Elite Five -->
+  <section class="section container">
+    <div class="section-head">
+      <h2><i data-lucide="star"></i> Elite Five</h2>
+    </div>
+
+    <div class="elite-grid">
+      <div class="elite-card"><i data-lucide="user"></i> — — —</div>
+      <div class="elite-card"><i data-lucide="user"></i> — — —</div>
+      <div class="elite-card"><i data-lucide="user"></i> — — —</div>
+      <div class="elite-card"><i data-lucide="user"></i> — — —</div>
+      <div class="elite-card"><i data-lucide="user"></i> — — —</div>
+    </div>
+  </section>
+
+  <footer class="footer container">
+    © <span id="year"></span> Robotics Engineering Club
+  </footer>
+
+  <script>
+    lucide.createIcons();
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
